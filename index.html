@@ -1,206 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/style.min.css" rel="stylesheet">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body class="site-wrapper">
-    <div style="display:none">
-      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="s-htmlacademy" viewbox="0 0 60 60"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path></symbol><symbol id="s-icon-fb-mobile" viewbox="0 0 10 19"><path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"></path></symbol><symbol id="s-icon-insta-mobile" viewbox="0 0 16 16"><path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"></path><path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"></path><circle class="st0" cx="12.3" cy="3.7" r=".9"></circle></symbol><symbol id="s-icon-vk-mobile" viewbox="0 0 22 12"><path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9c.3-.3.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6 0 0 .5 1.1 1.1 2 1 1.5 1.4 1.9 1.5 2 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1 0 .1.5.5.9.9 1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.9zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"></path></symbol></svg>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Кексобукинг</title>
+</head>
+<body>
+
+  <main>
+    <div class="promo">
+      <h1 class="promo__title visually-hidden">Keksobooking. Кексы по соседству</h1>
+      <img src="img/keksobooking.svg" alt="Keksobooking. Кексы по соседству" width="215" height="45">
     </div>
-    <header class="main-header main-header--index  container">
-      <div class="main-header__logo energy-logo main-header__logo--closed-menu">
-        <a>
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
-          </picture>
-        </a>
-        <button class="energy-logo__menu-close menu-close__button-closed menu-close__button-nojs">
-        <span class="visually-hidden">Закрыть меню</span>
+
+    <!-- Карта объявлений -->
+    <section class="map map--faded">
+
+      <!-- Метки объявлений -->
+      <div class="map__pins">
+        <div class="map__overlay">
+          <h2 class="map__title">И снова Токио!</h2>
+        </div>
+        <button class="map__pin map__pin--main" style="left: 570px; top: 375px;">
+          <img src="img/muffin-red.svg" width="40" height="44" draggable="false" alt="Метка объявления">
+          <svg viewBox="0 0 70 70" width="156" height="156" aria-label="Метка для поиска жилья">
+            <defs>
+              <path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" id="tophalf" />
+            </defs>
+            <ellipse cx="35" cy="35" rx="35" ry="35" fill="rgba(255, 86, 53, 0.7)" />
+            <text><textPath xlink:href="#tophalf" startOffset="0">Поставь меня куда-нибудь</textPath></text>
+          </svg>
         </button>
       </div>
-      <nav class="">
-        <ul class="main-header__nav site-nav menu-close__closed menu-close__menu-nojs">
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--index site-nav__link--active site-nav__link--active--index">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--index" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--index" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="index-main">
-      <section class="index-main__showcase showcase">
-        <section class="shocase__intro intro container">
-          <span class="intro__title">Функциональное питание для котов</span>
-          <b class="intro__slogan">Занялся собой? Займись котом!</b>
-          <a class="intro__button button" href="form.html">Подобрать программу</a>
-        </section>
-        <div class="showcase__items__wrapper container">
-          <section class="showcase__item showcase-description">
-            <h2 class="showcase-description__title">Похудение</h2>
-            <p class="showcase-description__info">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim
-              поможет вашeму питомцу сбросить лишний вес.
-            </p>
-            <a class="showcase-description__link" href="catalog.html#slim">Каталог Slim</a>
-          </section>
-          <section class="showcase__item showcase-description showcase-description--pro">
-            <h2 class="showcase-description__title showcase-description__title--pro">Набор массы</h2>
-            <p class="showcase-description__info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="showcase-description__link" href="catalog.html#pro">Каталог pro</a>
-          </section>
-        </div>
-      </section>
-      <section class="index-main__example example container">
-        <h2 class="example__title">Как это работает</h2>
-        <ul class="example__list advantages">
-          <li class="advantages__item advantages__item--1">Функциональное питание содержит только полезные питательные
-            вещества.
-          </li>
-          <li class="advantages__item advantages__item--2">Выпускается в виде порошка, который нужно лишь залить кипятком
-            и готово.
-          </li>
-          <li class="advantages__item advantages__item--3">Замените один-два приема обычной еды на наше функциональное
-            питание.
-          </li>
-          <li class="advantages__item advantages__item--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-            питомца!
-          </li>
-        </ul>
-      </section>
-      <section class="living-example">
-        <div class="living-example__info-wrapper container">
-          <h3 class="living-example__title">Живой пример</h3>
-          <p class="living-example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-            16 часов в день.
-          </p>
-          <div class="living-example__table">
-            <div class="living-example__tr">
-              <div class="living-example__data living-example__data--1">5 кг</div>
-              <div class="living-example__data living-example__data--2">60 дней</div>
-            </div>
-            <div class="living-example__tr">
-              <div class="living-example__parameter">
-                <span class="living-example__mask">снижение веса</span>
-              </div>
-              <div class="living-example__parameter">
-                <span class=" living-example__mask">затрачено времени</span>
-              </div>
-            </div>
-          </div>
-          <span class="living-example__result"><span>Затраты на питание:</span> <span>15 000 руб.</span></span>
-        </div>
-        <div class="living-example__img-wrapper container">
-          <div class="living-example__img-1-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="living-example__img living-example__img--1" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
-            </picture>
-          </div>
-          <div class="living-example__img-2-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="living-example__img living-example__img2" src="#" alt="Тощий кот">
-            </picture>
-          </div>
-          <div class="living-example__slider-buttons">
-            <span class="living-example__description">Было</span>
-            <div class="living-example__button">
-              <span class="visually-hidden">Переключить слайд</span>
-              <div class="living-example__switch">
-                <div class="living-example__img-switch" tabindex="0"></div>
-              </div>
-            </div>
-            <span class="living-example__description">Стало</span>
-          </div>
-        </div>
-      </section>
-      <section class="contacts container">
-        <div class="contacts__text">
-          <h2 class="visually-hidden">Адрес и контакты</h2>
-          <span class="contacts__slogan">приглашаем<br> к сотрудничеству дилеров!</span>
-          <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="contacts__address-city">Санкт-Петербург</span></span>
-        </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBK7YvfGC"></iframe>
-        <div class="contacts__map-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
-          </picture>
-        </div>
-      </section>
-    </main>
-    <footer class="main-footer container">
-      <div class="main-footer__logo energy-logo">
-        <img class="main-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy" width="130" height="27">
+
+      <!-- Фильтрация объявлений -->
+      <div class="map__filters-container">
+        <form action="#" class="map__filters" autocomplete="off">
+          <select name="housing-type" id="housing-type" class="map__filter">
+            <option value="any" selected>Любой тип жилья</option>
+            <option value="palace">Дворец</option>
+            <option value="flat">Квартира</option>
+            <option value="house">Дом</option>
+            <option value="bungalo">Бунгало</option>
+          </select>
+          <select name="housing-price" id="housing-price" class="map__filter">
+            <option value="any" selected>Любая</option>
+            <option value="middle">10000 - 50000&#x20bd;</option>
+            <option value="low">до 10000&#x20bd;</option>
+            <option value="high">от 50000&#x20bd;</option>
+          </select>
+          <select name="housing-rooms" id="housing-rooms" class="map__filter">
+            <option value="any" selected>Любое число комнат</option>
+            <option value="1">Одна комната</option>
+            <option value="2">Две комнаты</option>
+            <option value="3">Три комнаты</option>
+          </select>
+          <select name="housing-guests" id="housing-guests" class="map__filter">
+            <option value="any" selected>Любое число гостей</option>
+            <option value="2">Два гостя</option>
+            <option value="1">Один гость</option>
+            <option value="0">Не для гостей</option>
+          </select>
+          <fieldset id="housing-features" class="map__features">
+            <input type="checkbox" name="features" value="wifi" id="filter-wifi" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--wifi" for="filter-wifi">Wi-Fi</label>
+            <input type="checkbox" name="features" value="dishwasher" id="filter-dishwasher" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--dishwasher" for="filter-dishwasher">Посудомоечная машина</label>
+            <input type="checkbox" name="features" value="parking" id="filter-parking" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--parking" for="filter-parking">Парковка</label>
+            <input type="checkbox" name="features" value="washer" id="filter-washer" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--washer" for="filter-washer">Стиральная машина</label>
+            <input type="checkbox" name="features" value="elevator" id="filter-elevator" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--elevator" for="filter-elevator">Лифт</label>
+            <input type="checkbox" name="features" value="conditioner" id="filter-conditioner" class="map__checkbox visually-hidden">
+            <label class="map__feature map__feature--conditioner" for="filter-conditioner">Кондиционер</label>
+           </fieldset>
+        </form>
       </div>
-      <section class="main-footer__social">
-        <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul class="main-footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__vk" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-list__icon social-list__icon--vk" width="22" height="12">
-                <use xlink:href="#s-icon-vk-mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__inst" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="social-list__icon social-list__icon--inst" width="16" height="16">
-                <use xlink:href="#s-icon-insta-mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__fb" href="#">
-              <span class="visually-hidden">Фэйсбук</span>
-              <svg class="social-list__icon social-list__icon--fb" width="10" height="19">
-                <use xlink:href="#s-icon-fb-mobile"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="main-footer__copyright academy">
-        <h3 class="visually-hidden">Правообладатели</h3>
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <div class="academy__logo-block">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="academy__img" width="40" height="40">
-              <use xlink:href="#s-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
-    </footer>
-    <script src="js/script.js"></script>
-    <script src="js/picturefill.min.js"></script>
-  </body>
+    </section>
+
+    <!-- Форма объявления -->
+    <section class="notice">
+      <h2 class="notice__title">Ваше объявление</h2>
+      <form class="ad-form ad-form--disabled" method="post" enctype="multipart/form-data" autocomplete="off" action="https://js.dump.academy/keksobooking ">
+        <fieldset class="ad-form-header">
+          <legend class="ad-form-header__title">Ваша фотография (для карты)</legend>
+          <div class="ad-form-header__upload">
+            <div class="ad-form-header__preview">
+              <img src="img/muffin-grey.svg" alt="Аватар пользователя" width="40" height="44">
+            </div>
+            <div class="ad-form__field">
+              <input type="file" id="avatar" name="avatar" class="ad-form-header__input visually-hidden">
+              <label class="ad-form-header__drop-zone" for="avatar">Загрузите или&nbsp;перетащите сюда фото</label>
+            </div>
+            <p class="ad-form-header__info">Заполните все обязательные поля, назначьте цену, загрузите фотографии. Придумайте интересное описание. Оно сделает объявление более живым и привлекательным. Получившееся объявление должно давать гостям полное представление о вашем жилье.</p>
+          </div>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--wide">
+          <label class="ad-form__label" for="title">Заголовок объявления</label>
+          <input id="title" name="title" type="text" placeholder="Милая, уютная квартирка в центре Токио" required minlength="30" maxlength="100">
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--wide">
+          <label class="ad-form__label" for="address">Адрес</label>
+          <input id="address" name="address" type="text" readonly>
+        </fieldset>
+        <fieldset class="ad-form__element">
+          <label class="ad-form__label" for="type">Тип жилья</label>
+          <select id="type" name="type">
+            <option value="bungalo">Бунгало</option>
+            <option value="flat" selected>Квартира</option>
+            <option value="house">Дом</option>
+            <option value="palace">Дворец</option>
+          </select>
+        </fieldset>
+        <fieldset class="ad-form__element">
+          <label class="ad-form__label" for="price">Цена за ночь, руб.</label>
+          <input id="price" name="price" type="number" placeholder="5000" max="1000000" required>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--time">
+          <label class="ad-form__label" for="timein">Время заезда и выезда</label>
+          <select id="timein" name="timein">
+            <option value="12:00" selected>После 12</option>
+            <option value="13:00">После 13</option>
+            <option value="14:00">После 14</option>
+          </select>
+          <select id="timeout" name="timeout" title="Time to go out">
+            <option value="12:00" selected>Выезд до 12</option>
+            <option value="13:00">Выезд до 13</option>
+            <option value="14:00">Выезд до 14</option>
+          </select>
+        </fieldset>
+        <fieldset class="ad-form__element">
+          <label class="ad-form__label" for="room_number">Кол-во комнат</label>
+          <select id="room_number" name="rooms">
+            <option value="1" selected>1 комната</option>
+            <option value="2">2 комнаты</option>
+            <option value="3">3 комнаты</option>
+            <option value="100">100 комнат</option>
+          </select>
+        </fieldset>
+        <fieldset class="ad-form__element">
+          <label class="ad-form__label" for="capacity">Количество мест</label>
+          <select id="capacity" name="capacity">
+            <option value="3">для 3 гостей</option>
+            <option value="2">для 2 гостей</option>
+            <option value="1" selected>для 1 гостя</option>
+            <option value="0">не для гостей</option>
+          </select>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--wide features">
+          <legend>Удобства: Wi-Fi, кухня, парковка, стиралка, лифт, кондиционер</legend>
+          <input type="checkbox" name="features" value="wifi" id="feature-wifi" class="feature__checkbox visually-hidden">
+          <label class="feature feature--wifi" for="feature-wifi">Wi-Fi</label>
+          <input type="checkbox" name="features" value="dishwasher" id="feature-dishwasher" class="feature__checkbox visually-hidden">
+          <label class="feature feature--dishwasher" for="feature-dishwasher">Посудомоечная машина</label>
+          <input type="checkbox" name="features" value="parking" id="feature-parking" class="feature__checkbox visually-hidden">
+          <label class="feature feature--parking" for="feature-parking">Парковка</label>
+          <input type="checkbox" name="features" value="washer" id="feature-washer" class="feature__checkbox visually-hidden">
+          <label class="feature feature--washer" for="feature-washer">Стиральная машина</label>
+          <input type="checkbox" name="features" value="elevator" id="feature-elevator" class="feature__checkbox visually-hidden">
+          <label class="feature feature--elevator" for="feature-elevator">Лифт</label>
+          <input type="checkbox" name="features" value="conditioner" id="feature-conditioner" class="feature__checkbox visually-hidden">
+          <label class="feature feature--conditioner" for="feature-conditioner">Кондиционер</label>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--wide">
+          <label class="ad-form__label" for="description">Описание (не обязательно)</label>
+          <textarea id="description" name="description" placeholder="Здесь расскажите о том, какое ваше жилье замечательное и вообще"></textarea>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--wide">
+          <label class="ad-form__label">Фотографии жилья</label>
+          <div class="ad-form__photo-container">
+            <div class="ad-form__upload">
+              <input type="file" multiple id="images" name="images" class="ad-form__input visually-hidden">
+              <label for="images" class="ad-form__drop-zone">Загрузите или&nbsp;перетащите сюда фото</label>
+            </div>
+            <div class="ad-form__photo"></div>
+          </div>
+        </fieldset>
+        <fieldset class="ad-form__element ad-form__element--submit">
+          <button class="ad-form__submit" type="submit">Опубликовать</button>
+          или <button class="ad-form__reset" type="reset">очистить</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__copyright copyright">
+      <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/javascript">
+        <img src="img/htmla-logo.svg" width="130" height="45" alt="HTML Academy" class="copyright__logo">
+      </a>
+      <p>Сделано в <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/javascript">HTMLAcademy</a> &copy; 2018</p>
+    </div>
+    <ul class="footer__contacts contacts">
+      <li><a href="https://twitter.com/htmlacademy_ru" class="contacts__link contacts__link--twitter">Twitter</a></li>
+      <li><a href="https://www.instagram.com/htmlacademy/" class="contacts__link contacts__link--instagram">Instagtam</a></li>
+      <li><a href="https://www.facebook.com/htmlacademy" class="contacts__link contacts__link--facebook">Facebook</a></li>
+      <li><a href="https://vk.com/htmlacademy" class="contacts__link contacts__link--vk">VK</a></li>
+    </ul>
+  </footer>
+
+  <!-- Модальное окно с информацией об объявлении -->
+  <template id="card">
+    <article class="map__card popup">
+      <img src="img/avatars/user01.png" class="popup__avatar" width="70" height="70" alt="Аватар пользователя">
+      <button type="button" class="popup__close">Закрыть</button>
+      <h3 class="popup__title">Уютное гнездышко для молодоженов</h3>
+      <p class="popup__text popup__text--address">102-0082 Tōkyō-to, Chiyoda-ku, Ichibanchō, 14−3</p>
+      <p class="popup__text popup__text--price">5200&#x20bd;<span>/ночь</span></p>
+      <h4 class="popup__type">Квартира</h4>
+      <p class="popup__text popup__text--capacity">2 комнаты для 3 гостей</p>
+      <p class="popup__text popup__text--time">Заезд после 14:00, выезд до 10:00</p>
+      <ul class="popup__features">
+        <li class="popup__feature popup__feature--wifi"></li>
+        <li class="popup__feature popup__feature--dishwasher"></li>
+        <li class="popup__feature popup__feature--parking"></li>
+        <li class="popup__feature popup__feature--washer"></li>
+        <li class="popup__feature popup__feature--elevator"></li>
+        <li class="popup__feature popup__feature--conditioner"></li>
+      </ul>
+      <p class="popup__description">Великолепная квартира-студия в центре Токио. Подходит как туристам, так и бизнесменам. Квартира полностью укомплектована и недавно отремонтирована.</p>
+      <div class="popup__photos">
+        <img src="" class="popup__photo" width="45" height="40" alt="Фотография жилья">
+      </div>
+    </article>
+  </template>
+
+  <!-- Метка объявления -->
+  <template id="pin">
+    <button type="button" class="map__pin" style="left: 200px; top: 400px;"><img src="img/avatars/user07.png" width="40" height="40" draggable="false" alt="Метка объявления"></button>
+  </template>
+
+  <!-- Сообщение об успешном создании объявления -->
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Ваше объявление<br>успешно размещено!</p>
+    </div>
+  </template>
+
+  <!-- Сообщение об ошибке создания объеявления -->
+  <template id="error">
+    <div class="error">
+      <p class="error__message">Ошибка загрузки объявления</p>
+      <button class="error__button" href="#">Попробовать снова</button>
+    </div>
+  </template>
+  <script src="js/constants.js"></script>
+  <script src="js/backend.js"></script>
+  <script src="js/photos.js"></script>
+  <script src="js/debounce.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/render-pin.js"></script>
+  <script src="js/render-card.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/moving-pin.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/map-filters.js"></script>
+
+</body>
 </html>
