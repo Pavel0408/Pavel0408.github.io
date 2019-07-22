@@ -49782,7 +49782,7 @@ var ServerPath = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScreenSwitch", function() { return ScreenSwitch; });
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScreenSwitch", function() { return ScreenSwitch; });
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_main_screen_main_screen__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main-screen/main-screen */ "./src/components/main-screen/main-screen.jsx");
 /* harmony import */ var _components_sign_in_sign_in__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/sign-in/sign-in */ "./src/components/sign-in/sign-in.jsx");
@@ -49806,7 +49806,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ScreenSwitch = function ScreenSwitch(props) {
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["BrowserRouter"], {
+    basename: process.env.PUBLIC_URL
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
     path: "/",
     exact: true,
     render: function render() {
@@ -49887,6 +49889,7 @@ ScreenSwitch.propTypes = {
   onChangeActiveOffer: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.func,
   onChangeActivePinOffer: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.func
 };
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
