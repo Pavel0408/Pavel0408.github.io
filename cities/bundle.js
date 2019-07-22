@@ -50134,7 +50134,7 @@ var withScreenSwitch = function withScreenSwitch(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -50165,10 +50165,13 @@ var init = function init() {
   var store = Object(redux__WEBPACK_IMPORTED_MODULE_3__["createStore"])(_reducer_reducer__WEBPACK_IMPORTED_MODULE_7__["reducer"], Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_5__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_3__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_4__["default"].withExtraArgument(api))));
   react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_0__["Provider"], {
     store: store
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_app_app_connected__WEBPACK_IMPORTED_MODULE_6__["AppConnected"], null))), document.querySelector("#root"));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["BrowserRouter"], {
+    basename: process.env.PUBLIC_URL
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_app_app_connected__WEBPACK_IMPORTED_MODULE_6__["AppConnected"], null))), document.querySelector("#root"));
 };
 
 init();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
